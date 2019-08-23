@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aea9d87b-b3a0-49bb-9c3b-248d2445b1c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/baxterplanning/algorithms/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/baxterplanning/algorithms/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SortingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SortingTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +29,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="algorithms" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="algorithms" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="algorithms" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -59,12 +68,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortingTest.whenBubbleSortThenArrayIsSorted">
+  <component name="RunManager" selected="JUnit.SortingTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="algorithms [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="algorithms [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="SortingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms.test" />
@@ -81,28 +128,6 @@
       <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
       <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SortingTest" />
       <option name="METHOD_NAME" value="whenBubbleSortThenArrayIsSorted" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingTest.whenMinimumIndexMethodCalledThenMinimumIndexReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms.test" />
-      <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SortingTest" />
-      <option name="METHOD_NAME" value="whenMinimumIndexMethodCalledThenMinimumIndexReturned" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingTest.whenSelectionSortThenArrayIsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms.test" />
-      <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SortingTest" />
-      <option name="METHOD_NAME" value="whenSelectionSortThenArrayIsSorted" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -138,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortingTest.whenBubbleSortThenArrayIsSorted" />
-        <item itemvalue="JUnit.SortingTest.whenSelectionSortThenArrayIsSorted" />
         <item itemvalue="JUnit.SortingTest" />
+        <item itemvalue="JUnit.SortingTest.whenBubbleSortThenArrayIsSorted" />
         <item itemvalue="JUnit.SortingTest.whenSwapMethodThenArrayValuesAreSwappedAtGivenIndices" />
-        <item itemvalue="JUnit.SortingTest.whenMinimumIndexMethodCalledThenMinimumIndexReturned" />
+        <item itemvalue="Gradle.algorithms [build]" />
+        <item itemvalue="Gradle.algorithms [clean]" />
       </list>
     </recent_temporary>
   </component>

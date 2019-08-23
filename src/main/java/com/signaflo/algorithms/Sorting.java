@@ -33,12 +33,11 @@ public class Sorting {
   }
 
   // Swaps the values at the provided indices of the given array of integers.
-  // Swapping is done in place and the array returned is the one passed in.
-  static int[] swap(int[] integers, int firstIndex, int secondIndex) {
+  // Swapping is done in place, mutating the passed in array.
+  static void swap(int[] integers, int firstIndex, int secondIndex) {
     int temp = integers[firstIndex];
     integers[firstIndex] = integers[secondIndex];
     integers[secondIndex] = temp;
-    return integers;
   }
 
   /**
@@ -46,7 +45,7 @@ public class Sorting {
    * 
    * The array is sorted in place in ascending order.
    * 
-   * @param integers the integers to sort.
+   * @param integers the elements to sort.
    */
   public static void bubbleSort(int[] integers) {
     int n = integers.length;
@@ -59,12 +58,12 @@ public class Sorting {
    * Compare each integer among those remaining that haven't been swapped to the end.
    * If the integer to the left is larger than the one to the right, swap places.
    *
-   * @param integers the integers to be sorted.
-   * @param alreadySorted the number of integers already moved over to the end of the array.
+   * @param integers the elements to be compared.
+   * @param alreadyBubbled the number of integers already moved over to the end of the array.
    */
-  private static void compareAndSwapAdjacentIntegers(int[] integers, int alreadySorted) {
+  private static void compareAndSwapAdjacentIntegers(int[] integers, int alreadyBubbled) {
     int n = integers.length;
-    for (int j = 0; j < n - 1 - alreadySorted; j++) { 
+    for (int j = 0; j < n - 1 - alreadyBubbled; j++) { 
       if (integers[j] > integers[j + 1]) { 
         swap(integers, j + 1, j); 
       } 

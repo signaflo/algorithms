@@ -27,14 +27,15 @@ public class SortingTest {
 
   @Test
   public void whenMinimumIndexMethodCalledThenMinimumIndexReturned() {
-    assertThat(Sorting.getIndexOfSmallerValue(testArray, 0, testArray.length), is(3));
+    int indexOfSmallerValue = Sorting.getIndexOfSmallerValue(testArray, 0, testArray.length);
+    assertThat(indexOfSmallerValue, is(3));
   }
 
   @Test
   public void whenSwapMethodThenArrayValuesAreSwappedAtGivenIndices() {
-    int[] swapped = Sorting.swap(testArray, 2, 5);
+    Sorting.swap(testArray, 2, 5);
     int[] expected = {4, 9, 6, 1, 3, 7, 5};
-    assertThat(swapped, is(expected));
+    assertThat(testArray, is(expected));
   }
   
   @Test
