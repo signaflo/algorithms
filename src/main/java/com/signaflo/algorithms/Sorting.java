@@ -1,7 +1,7 @@
 package com.signaflo.algorithms;
 
 /**
- * A collection of sorting functions (static methods).
+ * A collection of sorting functions (in the form of static methods).
  */
 public class Sorting {
 
@@ -68,6 +68,10 @@ public class Sorting {
         swap(integers, j + 1, j); 
       } 
     } 
+  }
+  
+  public static void mergeSort(int[] integers) {
+    
   }
   
 }

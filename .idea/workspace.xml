@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea9d87b-b3a0-49bb-9c3b-248d2445b1c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SortingTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +49,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -68,77 +76,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortingTest">
+  <component name="RunManager" selected="JUnit.SearchTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="algorithms [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="algorithms [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="SortingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms.test" />
       <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SortingTest" />
+      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTest.whenBubbleSortThenArrayIsSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.whenBinarySearchValueEvenLengthEvenIndexThenCorrectIndexReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms.test" />
       <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SortingTest" />
-      <option name="METHOD_NAME" value="whenBubbleSortThenArrayIsSorted" />
+      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
+      <option name="METHOD_NAME" value="whenBinarySearchValueEvenLengthEvenIndexThenCorrectIndexReturned" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTest.whenSwapMethodThenArrayValuesAreSwappedAtGivenIndices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.whenBinarySearchValueOddLengthEvenIndexThenCorrectIndexReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms.test" />
       <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SortingTest" />
-      <option name="METHOD_NAME" value="whenSwapMethodThenArrayValuesAreSwappedAtGivenIndices" />
+      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
+      <option name="METHOD_NAME" value="whenBinarySearchValueOddLengthEvenIndexThenCorrectIndexReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.whenBinarySearchValueOddLengthOddIndexThenCorrectIndexReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms.test" />
+      <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
+      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
+      <option name="METHOD_NAME" value="whenBinarySearchValueOddLengthOddIndexThenCorrectIndexReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.whenValueNotInArrayThenNoSuchElementException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms.test" />
+      <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
+      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
+      <option name="METHOD_NAME" value="whenValueNotInArrayThenNoSuchElementException" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -163,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortingTest" />
-        <item itemvalue="JUnit.SortingTest.whenBubbleSortThenArrayIsSorted" />
-        <item itemvalue="JUnit.SortingTest.whenSwapMethodThenArrayValuesAreSwappedAtGivenIndices" />
-        <item itemvalue="Gradle.algorithms [build]" />
-        <item itemvalue="Gradle.algorithms [clean]" />
+        <item itemvalue="JUnit.SearchTest" />
+        <item itemvalue="JUnit.SearchTest.whenValueNotInArrayThenNoSuchElementException" />
+        <item itemvalue="JUnit.SearchTest.whenBinarySearchValueOddLengthEvenIndexThenCorrectIndexReturned" />
+        <item itemvalue="JUnit.SearchTest.whenBinarySearchValueOddLengthOddIndexThenCorrectIndexReturned" />
+        <item itemvalue="JUnit.SearchTest.whenBinarySearchValueEvenLengthEvenIndexThenCorrectIndexReturned" />
       </list>
     </recent_temporary>
   </component>
