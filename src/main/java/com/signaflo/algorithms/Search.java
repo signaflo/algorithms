@@ -10,8 +10,10 @@ public class Search {
   private Search() {}
 
   /**
+   * Perform binary search on an array of sorted integers, returning the index of the value if found
+   * and throwing a NoSuchElementException otherwise. Time performance is O(log n).
    * 
-   * @param integers the integers to search through for the provided value.
+   * @param integers a sorted array of integers to search through for the provided value.
    * @param value the value to search the array for.
    *              
    * @return the index where the value is stored in the array.
@@ -34,5 +36,24 @@ public class Search {
     } else {
       return binarySearch(integers, value, lowerBound, median - 1);
     }
+  }
+
+  /**
+   * Perform linear search on a sorted or unsorted array of integers. Time performance is O(n).
+   * 
+   * @param integers the array of integers to through for the provided value.
+   * @param value the value to search the array for.
+   *
+   * @return the index where the value is stored in the array.
+   *
+   * @throws NoSuchElementException if the value is not in the array.
+   */
+  public static int linearSearch(int[] integers, int value) {
+    for (int i = 0; i < integers.length; i++) {
+      if (integers[i] == value) {
+        return i;
+      }
+    }
+    throw new NoSuchElementException();
   }
 }

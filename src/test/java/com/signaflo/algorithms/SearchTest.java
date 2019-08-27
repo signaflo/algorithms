@@ -35,19 +35,32 @@ public class SearchTest {
   public void whenBinarySearchValueOddLengthOddIndexThenCorrectIndexReturned() {
     int value = 2;
     int correctIndex = 1;
-    assertThat(Search.binarySearch(oddLengthArray, value), is (correctIndex));
+    assertThat(Search.binarySearch(oddLengthArray, value), is(correctIndex));
   }
 
   @Test
   public void whenBinarySearchValueOddLengthEvenIndexThenCorrectIndexReturned() {
     int value = 4;
     int correctIndex = 2;
-    assertThat(Search.binarySearch(oddLengthArray, value), is (correctIndex));
+    assertThat(Search.binarySearch(oddLengthArray, value), is(correctIndex));
   }
   
   @Test
-  public void whenValueNotInArrayThenNoSuchElementException() {
+  public void whenLinearSearchThenCorrectIndex() {
+    int value = 4;
+    int correctIndex = 2;
+    assertThat(Search.linearSearch(oddLengthArray, value), is(correctIndex));
+  }
+  
+  @Test
+  public void whenValueNotInArrayAndBinarySearchThenNoSuchElementException() {
     exception.expect(NoSuchElementException.class);
     Search.binarySearch(evenLengthArray, 3);
+  }
+  
+  @Test
+  public void whenValueNotInArrayAndLinearSearchThenNoSuchElementException() {
+    exception.expect(NoSuchElementException.class);
+    Search.linearSearch(evenLengthArray, 3);
   }
 }

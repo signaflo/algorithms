@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea9d87b-b3a0-49bb-9c3b-248d2445b1c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/signaflo/algorithms/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/signaflo/algorithms/SearchTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,28 +75,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest">
+  <component name="RunManager" selected="JUnit.SearchTest.whenValueNotInArrayAndLinearSearchThenNoSuchElementException">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.whenBinarySearchValueEvenLengthOddIndexThenCorrectIndexReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms.test" />
       <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
       <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest.whenBinarySearchValueEvenLengthEvenIndexThenCorrectIndexReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algorithms.test" />
-      <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
-      <option name="METHOD_NAME" value="whenBinarySearchValueEvenLengthEvenIndexThenCorrectIndexReturned" />
+      <option name="METHOD_NAME" value="whenBinarySearchValueEvenLengthOddIndexThenCorrectIndexReturned" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -126,11 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.whenValueNotInArrayThenNoSuchElementException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.whenLinearSearchThenCorrectIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="algorithms.test" />
       <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
       <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
-      <option name="METHOD_NAME" value="whenValueNotInArrayThenNoSuchElementException" />
+      <option name="METHOD_NAME" value="whenLinearSearchThenCorrectIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.whenValueNotInArrayAndLinearSearchThenNoSuchElementException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="algorithms.test" />
+      <option name="PACKAGE_NAME" value="com.signaflo.algorithms" />
+      <option name="MAIN_CLASS_NAME" value="com.signaflo.algorithms.SearchTest" />
+      <option name="METHOD_NAME" value="whenValueNotInArrayAndLinearSearchThenNoSuchElementException" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -155,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.SearchTest.whenValueNotInArrayThenNoSuchElementException" />
+        <item itemvalue="JUnit.SearchTest.whenValueNotInArrayAndLinearSearchThenNoSuchElementException" />
+        <item itemvalue="JUnit.SearchTest.whenLinearSearchThenCorrectIndex" />
         <item itemvalue="JUnit.SearchTest.whenBinarySearchValueOddLengthEvenIndexThenCorrectIndexReturned" />
+        <item itemvalue="JUnit.SearchTest.whenBinarySearchValueEvenLengthOddIndexThenCorrectIndexReturned" />
         <item itemvalue="JUnit.SearchTest.whenBinarySearchValueOddLengthOddIndexThenCorrectIndexReturned" />
-        <item itemvalue="JUnit.SearchTest.whenBinarySearchValueEvenLengthEvenIndexThenCorrectIndexReturned" />
       </list>
     </recent_temporary>
   </component>
