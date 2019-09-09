@@ -45,5 +45,27 @@ public class SortingTest {
     assertThat(testArray, is(sorted));
   }
   
+  @Test
+  public void whenMergeSortThenArrayIsSorted() {
+    int[] expected = new int[] {1, 3, 4, 5, 6, 7, 9};
+    int[] sorted = Sorting.mergeSort(testArray);
+    assertThat(sorted, is(expected));
+  }
+  
+  @Test
+  public void whenCombineTwoArraysLeftSmallerThanRightThenCombinedWithCorrectOrder() {
+    int[] array1 = new int[] {2, 3, 5};
+    int[] array2 = new int[] {8, 13};
+    int[] expected = new int[] {2, 3, 5, 8, 13};
+    assertThat(Sorting.combine(array1, array2), is(expected));
+  }
+  
+  @Test
+  public void whenCombineTwoArraysRightSmallerThanLeftThenCombinedWithCorrectOrder() {
+    int[] array1 = new int[] {8, 13};
+    int[] array2 = new int[] {2, 3, 5};
+    int[] expected = new int[] {2, 3, 5, 8, 13};
+    assertThat(Sorting.combine(array1, array2), is(expected));
+  }
   
 }

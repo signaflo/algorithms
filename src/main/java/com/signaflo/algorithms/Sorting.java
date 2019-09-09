@@ -3,6 +3,7 @@ package com.signaflo.algorithms;
 /**
  * A collection of sorting functions (in the form of static methods).
  */
+
 public class Sorting {
 
   private Sorting() {}
@@ -70,8 +71,50 @@ public class Sorting {
     } 
   }
   
-  public static void mergeSort(int[] integers) {
+  public static int[] mergeSort(int[] integers) {
+    return mergeSort(integers, integers.length);
+  }
+  
+  private static int[] mergeSort(int[] integers, int n) {
+    if (n < 2) {
+      return integers;
+    }
     
+    int leftLength = n / 2;
+    int rightLength = (n % 2 == 0)? (n / 2) : ((n + 1) / 2);
+    int[] left = new int[leftLength];
+    int[] right = new int[rightLength];
+    System.arraycopy(integers, 0, left, 0, leftLength);
+    System.arraycopy(integers, leftLength, right, 0, rightLength);
+    
+    left = mergeSort(left, left.length);
+    right = mergeSort(right, right.length);
+    return combine(left, right);
+  }
+  
+  static int[] combine(int[] array1, int[] array2) {
+    int[] combined = new int[array1.length + array2.length];
+    int leftIndex = 0;
+    int rightIndex = 0;
+    
+    for (int i = 0; i < combined.length; i++) {
+      if (leftIndex == array1.length) { // There are no more elements to compare in array1.
+        if (rightIndex < array2.length) {
+          combined[i] = array2[rightIndex++];
+        }
+      } else if (rightIndex == array2.length) { // There are no more elements to compare in array2.
+        if (leftIndex < array1.length) {
+          combined[i] = array1[leftIndex++];
+        }
+      } else { // There are elements left to compare in both arrays.
+        if (array1[leftIndex] < array2[rightIndex]) {
+          combined[i] = array1[leftIndex++];
+        } else {
+          combined[i] = array2[rightIndex++];
+        }
+      }
+    }
+    return combined;
   }
   
 }
