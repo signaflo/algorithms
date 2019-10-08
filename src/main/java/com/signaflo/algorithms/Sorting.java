@@ -1,9 +1,10 @@
 package com.signaflo.algorithms;
 
+import lombok.NonNull;
+
 /**
  * A collection of sorting functions (in the form of static methods).
  */
-
 public class Sorting {
 
   private Sorting() {}
@@ -115,6 +116,37 @@ public class Sorting {
       }
     }
     return combined;
+  }
+
+  public static void quickSort(@NonNull int[] array) {
+    if (array.length > 1) {
+      quickSort(array, 0, array.length - 1);
+    }
+  }
+
+  private static void quickSort(int[] array, int start, int end) {
+    int partitionPoint = partition(array, start, end);
+
+    if (partitionPoint - 1 > start) {
+      quickSort(array, start, partitionPoint - 1);
+    }
+    if (partitionPoint + 1 < end) {
+      quickSort(array, partitionPoint + 1, end);
+    }
+  }
+
+  private static int partition(int[] array, int start, int end) {
+    int pivot = array[end];
+
+    for (int i = start; i < end; i++) {
+      if (array[i] < pivot) {
+        swap(array, start, i);
+        start++;
+      }
+    }
+
+    swap(array, start, end);
+    return start;
   }
   
 }

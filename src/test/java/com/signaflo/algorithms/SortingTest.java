@@ -67,5 +67,12 @@ public class SortingTest {
     int[] expected = new int[] {2, 3, 5, 8, 13};
     assertThat(Sorting.combine(array1, array2), is(expected));
   }
+
+  @Test
+  public void whenQuickSortThenArrayIsSorted() {
+    int[] expected = new int[] {1, 3, 4, 5, 6, 7, 9};
+    Sorting.quickSort(testArray);
+    assertThat(testArray, is(expected));
+  }
   
 }
