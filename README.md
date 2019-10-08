@@ -1,3 +1,3 @@
 # algorithms
 
-Code for data structures and algorithms course being taken through EdX.
+Data structures and algorithms in Java.
